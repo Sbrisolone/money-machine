@@ -5,7 +5,7 @@
   "geo": "IT",
   "ollama_model": "llama3.2",
   "min_words": 800,
-  "auto_publish": false,
+  "auto_publish": true,
   "adsense_client": "",
   "affiliate_links": {
     "Voli e hotel low cost (Booking.com)": "https://affiliate.booking.com/",
