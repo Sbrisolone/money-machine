@@ -1,0 +1,64 @@
+{
+  "niche": "viaggi low cost Italia",
+  "site_name": "Money Machine Blog",
+  "language": "it",
+  "geo": "IT",
+  "ollama_model": "llama3.2",
+  "min_words": 800,
+  "auto_publish": false,
+  "adsense_client": "",
+  "affiliate_links": {
+    "Voli e hotel low cost (Booking.com)": "https://affiliate.booking.com/",
+    "Esperienze e tour (GetYourGuide)": "https://www.getyourguide.com/affiliate-program/",
+    "Tours e attività (Viator)": "https://www.viator.com/affiliate",
+    "Voli low cost (Skyscanner)": "https://www.skyscanner.net/affiliate-program/"
+  },
+  "author": {
+    "name": "Redazione",
+    "bio": "Guide pratiche su viaggi low cost e risparmio."
+  },
+  "finance": {
+    "risk_percentage": 10,
+    "reinvest_percentage": 50,
+    "auto_upgrades": true,
+    "upgrades": {
+      "llm_premium": {
+        "name": "LLM Premium (OpenRouter)",
+        "cost": 20,
+        "recurring": true,
+        "threshold": 50,
+        "desc": "Modello IA più potente → articoli migliori → più traffico",
+        "model": "anthropic/claude-sonnet-4-5",
+        "api_env": "OPENROUTER_API_KEY"
+      },
+      "custom_domain": {
+        "name": "Dominio personale",
+        "cost": 12,
+        "recurring": true,
+        "threshold": 30,
+        "desc": "Dominio .it — migliori admission AdSense e SEO"
+      }
+    },
+    "risk_campaigns": {
+      "paid_ads": {
+        "enabled": true,
+        "max_per_campaign": 20,
+        "desc": "Annunci pagati (Google/FB) per affiliate — rischio business, non gioco"
+      },
+      "prediction_markets": {
+        "enabled": false,
+        "max_per_campaign": 25,
+        "desc": "AZZAREDO a aspettativa negativa (bot su Kalshi: -16% a -31%) — disattivato"
+      }
+    }
+  },
+  "tips": [
+    "Iscriviti a Booking.com Affiliate Partner Centre — 25-40% della commissione, cookie 30 giorni. Il link è in config.json.",
+    "GetYourGuide e Viator pagano 8% su tour e attività — inserisci nei articoli su mete e 'cosa fare'.",
+    "Crea cluster di contenuti: 1 articolo principale (pillar) + 6-10 articoli collegati, con link interni tra di loro. Doppia la autorevolità in Google.",
+    "Aggiungi schema FAQ ai articoli — aumenta le possibilità di comparire negli AI Overview e featured snippet.",
+    "Aggiorna gli articoli vecchi ogni 3-4 mesi con dati freschi: Google premia la freschezza.",
+    "Pubblica con costanza: 16+ articoli al mese vs 0-4 = 3.5x traffico (analisi HubSpot).",
+    "Ottimizza per AI search: rispondi alla domanda nei primi 40-80 parole di ogni sezione."
+  ]
+}

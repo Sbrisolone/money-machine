@@ -1,0 +1,82 @@
+{
+  "safe_balance": 110.5,
+  "risk_balance": 5.0,
+  "total_earned": 150.0,
+  "total_safe": 135.0,
+  "total_risk": 15.0,
+  "total_invested": 17.5,
+  "history": [
+    {
+      "ts": "2026-10-24 14:26",
+      "type": "income",
+      "amount": 100.0,
+      "note": "AdSense — split 90.0 safe / 10.0 risk"
+    },
+    {
+      "ts": "2026-10-24 14:26",
+      "type": "upgrade",
+      "amount": 20.0,
+      "note": "LLM Premium (OpenRouter) — Modello IA più potente → articoli migliori → più traffico"
+    },
+    {
+      "ts": "2026-10-24 14:26",
+      "type": "upgrade",
+      "amount": 12.0,
+      "note": "Dominio personale — Dominio .it — migliori admission AdSense e SEO"
+    },
+    {
+      "ts": "2026-10-24 14:26",
+      "type": "invest",
+      "amount": 10.0,
+      "note": "paid_ads (paid_ads-20261024142636) Google Ads campagna affiliate booking"
+    },
+    {
+      "ts": "2026-10-24 14:26",
+      "type": "settle",
+      "amount": 25.0,
+      "note": "paid_ads-20261024142636: profitto 15.00 — 7.50 riinvestito risk, 7.50 → safe"
+    },
+    {
+      "ts": "2026-10-24 14:26",
+      "type": "invest",
+      "amount": 7.5,
+      "note": "paid_ads (paid_ads-20261024142653) test perdita"
+    },
+    {
+      "ts": "2026-10-24 14:26",
+      "type": "settle",
+      "amount": 6.0,
+      "note": "paid_ads-20261024142653: perdita 1.50 — coperta solo dal risk budget (safe ileso)"
+    },
+    {
+      "ts": "2026-10-24 14:45",
+      "type": "income",
+      "amount": 50.0,
+      "note": "Test — split 45.0 safe / 5.0 risk"
+    }
+  ],
+  "campaigns": {
+    "paid_ads-20261024142636": {
+      "campaign": "paid_ads",
+      "invested": 10.0,
+      "note": "Google Ads campagna affiliate booking",
+      "status": "closed",
+      "created": "2026-10-24 14:26",
+      "return": 25.0,
+      "profit": 15.0
+    },
+    "paid_ads-20261024142653": {
+      "campaign": "paid_ads",
+      "invested": 7.5,
+      "note": "test perdita",
+      "status": "closed",
+      "created": "2026-10-24 14:26",
+      "return": 6.0,
+      "profit": -1.5
+    }
+  },
+  "upgrades_applied": [
+    "llm_premium",
+    "custom_domain"
+  ]
+}
