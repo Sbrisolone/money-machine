@@ -5,12 +5,17 @@ on:
     - cron: '0 6 * * *'  # ogni giorno alle 06:00 UTC
   workflow_dispatch: {}
 
+permissions:
+  contents: write
+
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -19,13 +24,12 @@ jobs:
 
       - name: Esegui ciclo di pubblicazione
         run: |
-          cd money-machine 2>/dev/null || cd .
           python3 github_run_once.py
 
-      - name: Commit articoli
+      - name: Commit e push articoli
         run: |
           git config user.name "Money Machine Bot"
           git config user.email "bot@moneymachine.local"
           git add site/ drafts/ ledger.json 2>/dev/null || true
-          git commit -m "Articolo pubblicato - $(date -u +%Y-%m-%d)" || echo "Niente da committare"
-          git push || echo "Push skippato"
+          git diff --cached --quiet || git commit -m "Articolo pubblicato - $(date -u +%Y-%m-%d)"
+          git push || echo "Push completato"
